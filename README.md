@@ -16,6 +16,7 @@ cd euler
 swift run euler 1
 #and
 swift run euler 1 [-s]
+swift test
 ```
 As you see it works from the command line and in Xcode. In Xcode you will need to edit the scheme to pass command line arguments.
 
