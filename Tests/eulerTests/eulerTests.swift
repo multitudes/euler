@@ -2,7 +2,7 @@ import XCTest
 import class Foundation.Bundle
 
 final class eulerTests: XCTestCase {
-    func testChallenge() throws {
+    func testExample() throws {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct
         // results.
@@ -11,12 +11,38 @@ final class eulerTests: XCTestCase {
         guard #available(macOS 10.13, *) else {
             return
         }
-        try testChallenge18Test(number: "18", flag: "-s")
+
+        let fooBinary = productsDirectory.appendingPathComponent("euler")
+
+        let process = Process()
+        process.executableURL = fooBinary
+        process.arguments = ["1"]
+
+        let pipe = Pipe()
+        process.standardOutput = pipe
+
+        try process.run()
+        process.waitUntilExit()
+
+        let data = pipe.fileHandleForReading.readDataToEndOfFile()
+        let output = String(data: data, encoding: .utf8)
+
+        XCTAssertEqual(output, "Hello, world!\n")
     }
 
-
+    /// Returns path to the built products directory.
+    var productsDirectory: URL {
+      #if os(macOS)
+        for bundle in Bundle.allBundles where bundle.bundlePath.hasSuffix(".xctest") {
+            return bundle.bundleURL.deletingLastPathComponent()
+        }
+        fatalError("couldn't find the products directory")
+      #else
+        return Bundle.main.bundleURL
+      #endif
+    }
 
     static var allTests = [
-        ("testChallenge18Test", testChallenge18Test),
+        ("testExample", testExample),
     ]
 }
