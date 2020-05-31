@@ -17,12 +17,13 @@ swift run euler 1
 #and
 swift run euler 1 [-s]
 ```
-As you see it works from the command line and in Xcode. It can be compiled as executable with 
+As you see it works from the command line and in Xcode. In Xcode you will need to edit the scheme to pass command line arguments.
+
+Also it can be compiled as executable with: 
 
 ```bash
 swift build --configuration release
 cp .build/release/euler /usr/local/bin/euler
-
 ```
 
 We can now run our script from anywhere using just for instance `euler` with the arguments!
