@@ -7,7 +7,11 @@
 
 import Foundation
 
-public let (firstYear, lastYear) = (1901,2001)
+public let inputChallenge20: Int = 27
 
-//public let (firstYear, lastYear) = (1995, 2000)
-//public let (firstYear, lastYear) = (1943, 1946)
+//sumFactorialDigits(10) should return a number.
+//sumFactorialDigits(10) should return 27.
+//sumFactorialDigits(25) should return 72.
+//sumFactorialDigits(50) should return 216.
+//sumFactorialDigits(75) should return 432.
+//sumFactorialDigits(100) should return 648.
