@@ -14,11 +14,12 @@ cd euler
 # swift run euler <challenge number> [-s]
 # start with 
 swift run euler 1
-#and
+#and run and get the solution
 swift run euler 1 [-s]
+# you can run the tests!
 swift test
 ```
-As you see it works from the command line and in Xcode. In Xcode you will need to edit the scheme to pass command line arguments.
+As you see it works from the command line and in Xcode. In Xcode you will need to edit the scheme to pass command line arguments. `Command-U` will run the tests, `Command-B` to build and `Command-R` to run.
 
 Also it can be compiled as executable with: 
 
