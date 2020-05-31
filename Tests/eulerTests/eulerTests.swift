@@ -12,6 +12,9 @@ final class eulerTests: XCTestCase {
             return
         }
         try testChallenge18Test(number: "18", flag: "-s")
+        try testChallenge19Test(number: "19", flag: "-s")
+        try testChallenge20Test(number: "20", flag: "-s")
+        
     }
 
 
