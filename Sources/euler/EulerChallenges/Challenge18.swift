@@ -16,18 +16,18 @@ public class Challenge18 {
     }
     
     public func maximumPathSum(triangle: [[Int]]) -> Int {
-        for (index, line) in triangle.reversed().enumerated() {
-            print(index, line)
+        var temp: [[Int]] = triangle
+       
+        for i in stride(from: temp.count-2, through: 0, by: -1) {
+            //print(i)
+            for j in (0...i) {
+                //print(i, j)
+                temp[i][j] += max(temp[i+1][j], temp[i+1][j+1])
+            }
+            
         }
-        return 1
+        return temp[0][0]
     }
-        
-        //          for (let i = t.length - 2; i >= 0; i--)
-        //            for (let j = 0; j <= i; j++)
-        //              t[i][j]+= Math.max(t[i + 1][j], t[i + 1][j + 1]);
-        //          return triangle[0][0];
-        //        }
-        //        solution(triangle);
         
     public func printDescription() {
             print(descriptionForChallenge18)

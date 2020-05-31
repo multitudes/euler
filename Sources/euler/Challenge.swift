@@ -15,18 +15,12 @@ public class Challenge {
     init(with solution: Bool, number: Int) {
         Self.solution = solution
         self.number = number
-        print("init \(solution) \(number)")
     }
     
     public func runChallenge() {
         
         if let challenge = EulerChallenge(rawValue: number) {
-            let start = DispatchTime.now()
             let challengeSolution: Int = challenge.execute()
-            let end = DispatchTime.now()
-            let nanoTime = end.uptimeNanoseconds - start.uptimeNanoseconds
-            let timeInterval = Double(nanoTime) / 1_000_000_000
-            print("Time to evaluate problem: \(timeInterval) seconds")
             print("Solution: \(challengeSolution)")
         }
     }
@@ -46,7 +40,8 @@ public class Challenge {
                     break
                 case .challenge18:
                     if solution == true {
-                        return Challenge18().maximumPathSum(triangle: testTriangle)
+                        //return Challenge18().maximumPathSum(triangle: testTriangle)
+                        return Challenge18().maximumPathSum(triangle: numTriangle)
                     } else {
                         print("descriptionForChallenge18 \(descriptionForChallenge18)")
                 }
@@ -85,10 +80,6 @@ public class Challenge {
             return 0
         }
     }
-    
-    
-    
-    
 }
 
 

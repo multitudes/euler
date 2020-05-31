@@ -13,7 +13,14 @@ struct euler: ParsableCommand {
     
     
     func run() throws {
+        let start = DispatchTime.now()
         Challenge(with: solution, number: number).runChallenge()
+        let end = DispatchTime.now()
+        let nanoTime = end.uptimeNanoseconds - start.uptimeNanoseconds
+        let timeInterval = Double(nanoTime) / 1_000_000_000
+        //print("Time to evaluate problem: \(timeInterval) seconds")
+
+
     }
 }
 
