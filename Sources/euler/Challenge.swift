@@ -18,19 +18,17 @@ public class Challenge {
     }
     
     public func runChallenge() {
-        
         if let challenge = EulerChallenge(rawValue: number) {
-            let challengeSolution: Int = challenge.execute()
-            print("Solution: \(challengeSolution)")
+                challenge.execute()
         }
     }
     
     
     enum EulerChallenge: Int {
         case challenge1 = 1,
-        challenge2, challenge3, challenge4, challenge5, challenge6, challenge7, challenge8, challenge9, challenge10, challenge11, challenge12, challenge13, challenge14, challenge15,challenge16, challenge17,challenge18
+        challenge2, challenge3, challenge4, challenge5, challenge6, challenge7, challenge8, challenge9, challenge10, challenge11, challenge12, challenge13, challenge14, challenge15,challenge16, challenge17, challenge18, challenge19
         
-        func execute() -> Int {
+        func execute() {
             switch self {
                 case .challenge1:
                     break
@@ -38,20 +36,10 @@ public class Challenge {
                     break
                 case .challenge3:
                     break
-                case .challenge18:
-                    if solution == true {
-                        //return Challenge18().maximumPathSum(triangle: testTriangle)
-                        return Challenge18().maximumPathSum(triangle: numTriangle)
-                    } else {
-                        print("descriptionForChallenge18 \(descriptionForChallenge18)")
-                }
-                
-                
                 case .challenge4:
                     break
                 case .challenge5:
                     break
-                
                 case .challenge6:
                     break
                 case .challenge7:
@@ -76,8 +64,22 @@ public class Challenge {
                     break
                 case .challenge17:
                     break
+                case .challenge18:
+                    if solution == true {
+                        //return Challenge18().maximumPathSum(triangle: testTriangle)
+                        let challengeSolution: Int = Challenge18().maximumPathSum(triangle: numTriangle)
+                        print("Solution: \(challengeSolution)")
+                    } else {
+                        print(descriptionForChallenge18)
+                    }
+                case .challenge19:
+                    if solution == true {
+                        let challengeSolution: Int = Challenge19().countingSundays(firstYear: firstYear, lastYear: lastYear)
+                        print("Solution: \(challengeSolution)")
+                    } else {
+                        print("descriptionForChallenge19 \(descriptionForChallenge19)")
+                }
             }
-            return 0
         }
     }
 }
