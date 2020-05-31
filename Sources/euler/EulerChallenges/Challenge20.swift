@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class Challenge19 {
+public class Challenge20 {
     
     var description: String = ""
     

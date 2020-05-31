@@ -7,7 +7,7 @@
 
 import Foundation
 
-public let descriptionForChallenge19 = """
+public let descriptionForChallenge20 = """
 \nProject Euler: Problem 20: Factorial digit sum\n
 \n
 

@@ -26,7 +26,7 @@ public class Challenge {
     
     enum EulerChallenge: Int {
         case challenge1 = 1,
-        challenge2, challenge3, challenge4, challenge5, challenge6, challenge7, challenge8, challenge9, challenge10, challenge11, challenge12, challenge13, challenge14, challenge15,challenge16, challenge17, challenge18, challenge19
+        challenge2, challenge3, challenge4, challenge5, challenge6, challenge7, challenge8, challenge9, challenge10, challenge11, challenge12, challenge13, challenge14, challenge15,challenge16, challenge17, challenge18, challenge19, challenge20
         
         func execute() {
             switch self {
@@ -77,8 +77,16 @@ public class Challenge {
                         let challengeSolution: Int = Challenge19().countingSundays(firstYear: firstYear, lastYear: lastYear)
                         print("Solution: \(challengeSolution)")
                     } else {
-                        print("descriptionForChallenge19 \(descriptionForChallenge19)")
+                        print(descriptionForChallenge19)
                 }
+                case .challenge20:
+                    if solution == true {
+                            let challengeSolution: Int = Challenge20().sumFactorialDigits(number: inputChallenge20)
+                            print("Solution: \(challengeSolution)")
+                        } else {
+                            print(descriptionForChallenge20)
+                    }
+                
             }
         }
     }
