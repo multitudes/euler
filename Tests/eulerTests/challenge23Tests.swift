@@ -2,7 +2,7 @@ import XCTest
 import class Foundation.Bundle
 
 
-func testChallenge22Test(number: String, flag: String) throws {
+func testChallenge23Test(number: String, flag: String) throws {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct
         // results.

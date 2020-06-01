@@ -12,7 +12,7 @@ public class Challenge21 {
     var description: String = ""
     
     public init() {
-        self.description = descriptionForChallenge20
+        self.description = descriptionForChallenge21
     }
     
     // I will multiply the solution array with the digits with the number - number is incremented in
