@@ -7,7 +7,7 @@
 
 import Foundation
 
-public let inputChallenge20: Int = 1000
+public let inputChallenge21: Int = 1000
 
 //
 //sumAmicableNum(1000) should return a number.

@@ -26,7 +26,7 @@ public class Challenge {
     
     enum EulerChallenge: Int {
         case challenge1 = 1,
-        challenge2, challenge3, challenge4, challenge5, challenge6, challenge7, challenge8, challenge9, challenge10, challenge11, challenge12, challenge13, challenge14, challenge15,challenge16, challenge17, challenge18, challenge19, challenge20
+        challenge2, challenge3, challenge4, challenge5, challenge6, challenge7, challenge8, challenge9, challenge10, challenge11, challenge12, challenge13, challenge14, challenge15,challenge16, challenge17, challenge18, challenge19, challenge20, challenge21
         
         func execute() {
             switch self {
