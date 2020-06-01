@@ -93,6 +93,14 @@ public class Challenge {
                     } else {
                         print(descriptionForChallenge21)
                 }
+                case .challenge22:
+                    if solution == true {
+                            let challengeSolution: Int = Challenge22().namesScores(array: inputChallenge22)
+                            print("Solution: \(challengeSolution)")
+                        } else {
+                            print(descriptionForChallenge21)
+                    }
+                
                 
             }
         }
