@@ -17,10 +17,28 @@ public class Challenge21 {
     
     // I will multiply the solution array with the digits with the number - number is incremented in
     // the other function sumFactorialDigits
+    private func getDivisorSum(number: Int) -> Int {
+        let sqrtn = Int(Double(number).squareRoot())
+        var sumOfDivisors: Int = 0
+        for i in 1...sqrtn {
+            if number % i == 0 {
+                sumOfDivisors += i + number/i
+            }
+        }
+        return sumOfDivisors
+    }
     
     public func sumAmicableNum(number: Int) -> Int {
-        
-        return 1111
+        precondition(number > 0, "The number must be positive")
+        var countAmicableNumbers: Int = 0
+        for i in 1...number {
+            let a = getDivisorSum(number: i)
+            let b = getDivisorSum(number: a)
+            if a == b {
+                countAmicableNumbers += 1
+            }
+        }
+        return countAmicableNumbers
     }
     
     public func printDescription() {
