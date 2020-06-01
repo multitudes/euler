@@ -86,6 +86,13 @@ public class Challenge {
                         } else {
                             print(descriptionForChallenge20)
                     }
+                case .challenge21:
+                if solution == true {
+                        let challengeSolution: Int = Challenge21().sumAmicableNum(number: inputChallenge21)
+                        print("Solution: \(challengeSolution)")
+                    } else {
+                        print(descriptionForChallenge21)
+                }
                 
             }
         }
