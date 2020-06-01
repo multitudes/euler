@@ -7,7 +7,7 @@
 
 import Foundation
 
-public let inputChallenge20: Int = 27
+public let inputChallenge20: Int = 10
 
 //sumFactorialDigits(10) should return a number.
 //sumFactorialDigits(10) should return 27.
