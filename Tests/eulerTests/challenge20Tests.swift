@@ -19,6 +19,6 @@ func testChallenge20Test(number: String, flag: String) throws {
 
         let data = pipe.fileHandleForReading.readDataToEndOfFile()
         let output = String(data: data, encoding: .utf8)
-        let expectedOutput = "Solution: 27\n"
+        let expectedOutput = "Solution: 648\n"
         XCTAssertEqual(output!, expectedOutput)
     }
