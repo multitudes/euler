@@ -1,6 +1,6 @@
 import XCTest
 import class Foundation.Bundle
-@testable import euler
+
 
 func testChallenge21Test(number: String, flag: String) throws {
         // This is an example of a functional test case.
@@ -8,9 +8,12 @@ func testChallenge21Test(number: String, flag: String) throws {
         // results.
 
     
-//    let solutionChallenge21 = Challenge21().sumAmicableNum
-//
-//        XCTAssertTrue(Int(solutionChallenge21(1000)) == solutionChallenge21(1000))
+        //let solutionChallenge21 = Challenge21().sumAmicableNum
+    
+    
+    
+//        let challenge = Challenge21()
+//    XCTAssertTrue(Int(challenge.sumAmicableNum(number: 1000)) == challenge.sumAmicableNum(number: 1000))
 //        XCTAssertEqual(solutionChallenge21(1000), 504)
 //
 //        XCTAssertEqual(solutionChallenge21(2000), 2898)
@@ -33,6 +36,6 @@ func testChallenge21Test(number: String, flag: String) throws {
 
         let data = pipe.fileHandleForReading.readDataToEndOfFile()
         let output = String(data: data, encoding: .utf8)
-        let expectedOutput = "Solution: 1111\n"
+        let expectedOutput = "Solution: 316226\n"
         XCTAssertEqual(output!, expectedOutput)
     }

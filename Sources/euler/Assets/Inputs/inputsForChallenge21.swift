@@ -7,8 +7,10 @@
 
 import Foundation
 
-public let inputChallenge21: Int = 1000
-
+//public let inputChallenge21: Int = 1000
+//public let inputChallenge21: Int = 2000
+//public let inputChallenge21: Int = 5000
+public let inputChallenge21: Int = 10000
 //
 //sumAmicableNum(1000) should return a number.
 //sumAmicableNum(1000) should return 504.
