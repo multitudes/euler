@@ -26,7 +26,7 @@ public class Challenge {
     
     enum EulerChallenge: Int {
         case challenge1 = 1,
-        challenge2, challenge3, challenge4, challenge5, challenge6, challenge7, challenge8, challenge9, challenge10, challenge11, challenge12, challenge13, challenge14, challenge15,challenge16, challenge17, challenge18, challenge19, challenge20, challenge21, challenge22, challenge23
+        challenge2, challenge3, challenge4, challenge5, challenge6, challenge7, challenge8, challenge9, challenge10, challenge11, challenge12, challenge13, challenge14, challenge15,challenge16, challenge17, challenge18, challenge19, challenge20, challenge21, challenge22, challenge23, challenge24
         
         func execute() {
             switch self {
@@ -107,7 +107,13 @@ public class Challenge {
                         } else {
                             print(descriptionForChallenge21)
                     }
-                
+                case .challenge24:
+                    if solution == true {
+                            let challengeSolution: Int = Challenge24().lexicographicPermutations(number: inputChallenge24)
+                            print("Solution: \(challengeSolution)")
+                        } else {
+                            print(descriptionForChallenge21)
+                    }
             }
         }
     }
