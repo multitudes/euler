@@ -9,10 +9,7 @@ import Foundation
 
 
 
-//public let inputChallenge22: [String] = ["THIS", "IS", "ONLY", "A", "TEST"]
-//const test2 = ['I', 'REPEAT', 'THIS', 'IS', 'ONLY', 'A', 'TEST']
-
-public let inputChallenge23 = 10000
+public let inputChallenge23 = 28123
 
 
 //sumOfNonAbundantNumbers(10000) should return a number.
