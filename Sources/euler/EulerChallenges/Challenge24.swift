@@ -17,6 +17,16 @@ public class Challenge24 {
     }
     
     
+    func getPermutations(for characters: String) -> [String] {
+        
+        let permutations = [String]()
+        if characters.count == 0 {
+            return []
+        }
+        
+        return []
+    }
+    
     func lexicographicPermutations(number: Int) -> Int {
         return -1
     }
