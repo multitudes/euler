@@ -109,7 +109,7 @@ public class Challenge {
                     }
                 case .challenge24:
                     if solution == true {
-                            let challengeSolution: Int = Challenge24().lexicographicPermutations(number: inputChallenge24)
+                            let challengeSolution: String = Challenge24().lexicographicPermutations(at: inputChallenge24)
                             print("Solution: \(challengeSolution)")
                         } else {
                             print(descriptionForChallenge21)

@@ -9,8 +9,8 @@ import Foundation
 
 
 
-public let inputChallenge24 = 012
-
+public let inputChallenge24: Int = 999999
+//public let inputChallenge24: Int = 2
 //
 //lexicographicPermutations(699999) should return a number.
 //lexicographicPermutations(699999) should return 1938246570.
