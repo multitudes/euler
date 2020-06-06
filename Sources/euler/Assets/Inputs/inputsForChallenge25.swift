@@ -8,12 +8,11 @@
 import Foundation
 
 
-
-public let inputChallenge25: Int = 999999
-//public let inputChallenge24: Int = 2
+public let inputChallenge25: Int = 5 // 21
+//public let inputChallenge25: Int = 1000
 //
-//lexicographicPermutations(699999) should return a number.
-//lexicographicPermutations(699999) should return 1938246570.
-//lexicographicPermutations(899999) should return 2536987410.
-//lexicographicPermutations(900000) should return 2537014689.
-//lexicographicPermutations(999999) should return 2783915460.
+//digitFibonacci(5) should return a number.
+//digitFibonacci(5) should return 21.
+//digitFibonacci(10) should return 45.
+//digitFibonacci(15) should return 69.
+//digitFibonacci(20) should return 93.
