@@ -98,22 +98,29 @@ public class Challenge {
                             let challengeSolution: Int = Challenge22().namesScores(array: inputChallenge22)
                             print("Solution: \(challengeSolution)")
                         } else {
-                            print(descriptionForChallenge21)
+                            print(descriptionForChallenge22)
                     }
                 case .challenge23:
                     if solution == true {
                             let challengeSolution: Int = Challenge23().sumOfNonAbundantNumbers(number: inputChallenge23)
                             print("Solution: \(challengeSolution)")
                         } else {
-                            print(descriptionForChallenge21)
+                            print(descriptionForChallenge23)
                     }
                 case .challenge24:
                     if solution == true {
                             let challengeSolution: String = Challenge24().lexicographicPermutations(at: inputChallenge24)
                             print("Solution: \(challengeSolution)")
                         } else {
-                            print(descriptionForChallenge21)
+                            print(descriptionForChallenge24)
                     }
+                case .challenge25:
+                if solution == true {
+                        let challengeSolution: String = Challenge25().lexicographicPermutations(at: inputChallenge24)
+                        print("Solution: \(challengeSolution)")
+                    } else {
+                        print(descriptionForChallenge25)
+                }
             }
         }
     }
