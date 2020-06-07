@@ -27,10 +27,11 @@ F9 = 34
 F10 = 55
 F11 = 89
 F12 = 144
+
 The 12th term, F12, is the first term to contain three digits.
 
 What is the index of the first term in the Fibonacci sequence to contain 1000 digits?
 
-https://projecteuler.net/problem=24/n
+https://projecteuler.net/problem=25/n
 https://www.freecodecamp.org/learn/coding-interview-prep/project-euler/problem-24-lexicographic-permutations\n
 """
