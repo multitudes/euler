@@ -17,12 +17,13 @@ public class Challenge25 {
     }
    
     func digitFibonacci(for digits: Int) -> Int {
+        if digits == 1 { return 1 }
         // the fibonacci sequence mathematically is a asymptotic function - The formula below (see the screen shot in images)
         // is tested and works well. tested from 5 digits
-        if digits >= 5 {
+        if digits >= 2 {
             let phi = 1.61803399 // golden ratio
-            print(log(10.0)) //. in swift log(10) is the natural logarithm
-            print(pow(2.71828, 2.302585092994046))
+            //print(log(10.0)) //. in swift log(10) is the natural logarithm
+            //print(pow(2.71828, 2.302585092994046))
             // here digits - 1 is because again 1000 has 4 digits so is 10^3
             let number = (log(10.0) * Double(digits - 1) + log(5.0) / 2 ) / log(phi)
             return Int(ceil(number))
