@@ -8,7 +8,7 @@
 import Foundation
 
 
-public let inputChallenge25: Int = 5 // 21
+public let inputChallenge25: Int = 20 // 21
 //public let inputChallenge25: Int = 1000
 //
 //digitFibonacci(5) should return a number.
