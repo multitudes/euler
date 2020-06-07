@@ -13,7 +13,7 @@ public class Challenge26 {
     var description: String = ""
     
     public init() {
-        self.description = descriptionForChallenge23
+        self.description = descriptionForChallenge26
     }
     
     func reciprocalCycles(for n: Int) -> Int {

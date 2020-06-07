@@ -13,7 +13,7 @@ public class Challenge24brute {
     var description: String = ""
     
     public init() {
-        self.description = descriptionForChallenge23
+        self.description = descriptionForChallenge24
     }
     
     func getPermutations(for string: String) -> [String] {

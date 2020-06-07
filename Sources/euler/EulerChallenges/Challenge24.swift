@@ -13,7 +13,7 @@ public class Challenge24 {
     var description: String = ""
     
     public init() {
-        self.description = descriptionForChallenge23
+        self.description = descriptionForChallenge24
     }
     
     // I keep this for later - it was used in the brute force solution

@@ -13,7 +13,7 @@ public class Challenge25 {
     var description: String = ""
     
     public init() {
-        self.description = descriptionForChallenge23
+        self.description = descriptionForChallenge25
     }
    
     func digitFibonacci(for digits: Int) -> Int {
