@@ -18,19 +18,9 @@ public class Challenge29 {
     
 
     func distinctPowers(number: Int) -> Int {
-        var interval = 2
-        var sum = 1
-        var i = 1
-        while i < number * number {
-           // print(i)
-            for _ in 0..<4 {
-                i += interval
-                sum += i
-         //       print("sum", sum)
-            }
-            interval += 2
-        }
-        return sum
+        
+        
+        return -1
     }
     
     public func printDescription() {
