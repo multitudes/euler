@@ -8,16 +8,16 @@
 import Foundation
 
 
-public class Challenge28 {
+public class Challenge29 {
     
     var description: String = ""
     
     public init() {
-        self.description = descriptionForChallenge28
+        self.description = descriptionForChallenge29
     }
     
 
-    func spiralDiagonals(number: Int) -> Int {
+    func distinctPowers(number: Int) -> Int {
         var interval = 2
         var sum = 1
         var i = 1
