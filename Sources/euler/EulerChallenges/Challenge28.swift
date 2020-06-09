@@ -16,8 +16,23 @@ public class Challenge28 {
         self.description = descriptionForChallenge28
     }
     
+
     func spiralDiagonals(number: Int) -> Int {
-        return -1
+        var interval = 2
+        var sum = 1
+        var i = 1
+        while i < number * number {
+            print(i)
+            for _ in 0..<4 {
+                i += interval
+                sum += i
+                print("sum", sum)
+            }
+            interval += 2
+        }
+        
+        
+        return sum
     }
     
     public func printDescription() {
