@@ -18,9 +18,14 @@ public class Challenge29 {
     
 
     func distinctPowers(number: Int) -> Int {
-        
-        
-        return -1
+        var terms: Set<Double> = []
+        for i in 2...number {
+            for j in 2...number {
+                terms.insert(pow(Double(i), Double(j)))
+            }
+            print(terms)
+        }
+        return terms.count
     }
     
     public func printDescription() {
