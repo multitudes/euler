@@ -26,7 +26,8 @@ public class Challenge {
     
     enum EulerChallenge: Int {
         case challenge1 = 1,
-        challenge2, challenge3, challenge4, challenge5, challenge6, challenge7, challenge8, challenge9, challenge10, challenge11, challenge12, challenge13, challenge14, challenge15,challenge16, challenge17, challenge18, challenge19, challenge20, challenge21, challenge22, challenge23, challenge24, challenge25, challenge26, challenge27, challenge28, challenge29
+        challenge2, challenge3, challenge4, challenge5, challenge6, challenge7, challenge8, challenge9, challenge10, challenge11, challenge12, challenge13, challenge14, challenge15,challenge16, challenge17, challenge18, challenge19, challenge20, challenge21, challenge22, challenge23, challenge24, challenge25, challenge26, challenge27, challenge28, challenge29,
+            challenge30
         
         func execute() {
             switch self {
@@ -148,6 +149,13 @@ public class Challenge {
                         print("Solution: \(challengeSolution)")
                     } else {
                         print(descriptionForChallenge29)
+                }
+                case .challenge30:
+                if solution == true {
+                    let challengeSolution: Int = Challenge30().digitnPowers(number: inputChallenge30)
+                        print("Solution: \(challengeSolution)")
+                    } else {
+                        print(descriptionForChallenge30)
                 }
             }
         }

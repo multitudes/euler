@@ -23,7 +23,7 @@ public class Challenge29 {
             for j in 2...number {
                 terms.insert(pow(Double(i), Double(j)))
             }
-            print(terms)
+            //print(terms)
         }
         return terms.count
     }
